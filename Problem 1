@@ -1,0 +1,28 @@
+
+package euler.problem.pkg1;
+
+/**
+ * 
+ * @author Beandip
+ */
+public class EulerProblem1 {
+    private static int x = 0;
+    private static int result;
+    
+    
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        for(int y = 0; y < 1000; y++){
+            if( (y % 3 == 0) || (y % 5 == 0)){
+                result = result + y;    
+            }   
+        }
+        System.out.println(result);
+        
+    }
+    
+}
